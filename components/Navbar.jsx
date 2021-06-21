@@ -20,7 +20,7 @@ function LandingNav() {
         Open-IVF
       </Navbar.Brand>
       <Nav className="">
-        <Link href="/posts/hello-world">Demo</Link>
+        <Link href="/posts/second-post">Demo</Link>
       </Nav>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">

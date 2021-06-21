@@ -9,6 +9,9 @@ import PeopleIcon from "@material-ui/icons/People";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import LayersIcon from "@material-ui/icons/Layers";
 import AssignmentIcon from "@material-ui/icons/Assignment";
+import AdjustIcon from "@material-ui/icons/Adjust";
+import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
+import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 
 export const mainListItems = (
   <div>
@@ -20,15 +23,15 @@ export const mainListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <AdjustIcon />
       </ListItemIcon>
-      <ListItemText primary="Orders" />
+      <ListItemText primary="My Embryo's" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <PeopleIcon />
+        <CalendarTodayIcon />
       </ListItemIcon>
-      <ListItemText primary="Customers" />
+      <ListItemText primary="Appointments" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
@@ -38,33 +41,33 @@ export const mainListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <LayersIcon />
+        <ContactSupportIcon />
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary="Contact Us" />
     </ListItem>
   </div>
 );
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
+    <ListSubheader inset>Recent Appointments</ListSubheader>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
+      <ListItemText primary="Embryo Pick-up" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Last quarter" />
+      <ListItemText primary="Lab report 1" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
+      <ListItemText primary="initial consult" />
     </ListItem>
   </div>
 );

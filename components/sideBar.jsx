@@ -32,7 +32,7 @@ export default function Side() {
             <img
               className="bi me-2 "
               width="40"
-              height="32"
+              height="40"
               alt=""
               src="../openIVF-01.svg"
               width="30"

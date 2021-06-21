@@ -22,6 +22,7 @@ import { mainListItems, secondaryListItems } from "./listItems";
 // import Chart from './Chart';
 import Deposits from "./Deposits";
 import Orders from "./Orders";
+import { Media } from "react-bootstrap";
 
 function Copyright() {
   return (
@@ -119,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Dashboard() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -155,8 +156,29 @@ export default function Dashboard() {
             noWrap
             className={classes.title}
           >
-            Dashboard
+            My Embryo's
           </Typography>
+          <Typography
+            component="h1"
+            variant="h6"
+            color="inherit"
+            noWrap
+            className={classes.title}
+          >
+            <Media>
+              <Link color="inherit" href="/">
+                <img
+                  width={45}
+                  height={45}
+                  color={"white"}
+                  className="mr-3"
+                  src="../openIVF-01-white.svg"
+                  alt=""
+                />{" "}
+              </Link>{" "}
+            </Media>
+          </Typography>
+
           <IconButton color="inherit">
             <Badge badgeContent={1} color="secondary">
               <NotificationsIcon />
